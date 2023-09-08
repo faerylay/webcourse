@@ -70,7 +70,6 @@ body {
 
 .main {
 	background-color: #262b36;
-	height: 2000px;
 	width: 1000px;
 	margin: auto;
 }
@@ -100,6 +99,7 @@ body {
 	flex-direction: row;
 	overflow: auto;
 }
+
 .card {
 	flex-shrink: 0;
 	width: 150px;
@@ -144,7 +144,83 @@ body {
 .new-release-footer-right {
 	background-color: #111;
 }
-/* Extra small devices (phones, 600px and down) */
+
+.movie-list {
+	width: 100%;
+	height: 1000px;
+	display: flex;
+}
+.theatre {
+	width: 75%;
+	height: 100%;
+}
+.theatre-category {
+	width: 25%;
+	height: 100%;
+}
+.movies {
+	width: 100%;
+}
+.movies-header {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.movies-header div:first-child {
+	color: darkturquoise;
+	font-weight: 600;
+	font-size: 20px;
+	border-left-width: 8px;
+	border-left-style: solid;
+	border-left-color: green;
+	padding: 0;
+	margin-left: 10px;
+	padding-left: 20px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.movies-header div:last-child {
+	padding-right: 20px;
+}
+.movies-header div:last-child button {
+	padding-inline: 10px;
+	padding-block: 5px;
+	border-width: 0px;
+	background-color: green;
+	color: #fff;
+}
+.movies-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movie-card {
+	flex-shrink: 0;
+	width: 135px;
+	height: 100%;
+	margin-left: 10px;
+	box-shadow: 1px 1px 10px #222;
+	border-radius: 5px;
+}
+.movie-card-body {
+	width: 100%;
+	height: 25%;
+}
+.movie-card-body p {
+	padding: 5px;
+	margin: 0;
+}
+.movie-card-body p:first-child {
+	color: #fff;
+}
+.movie-card-body p:last-child {
+	color: #ccc;
+}
 @media only screen and (max-width: 1000px) {
 	.main {
 		width: 100%;
@@ -153,7 +229,6 @@ body {
 		width: 100%;
 	}
 }
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
 	.list {
 		display: none;
@@ -181,5 +256,11 @@ body {
 		background-color: #c6c63b;
 		font-size: 16px;
 		font-weight: 600;
+	}
+	.theatre {
+		width: 100%;
+	}
+	.theatre-category {
+		display: none;
 	}
 }
