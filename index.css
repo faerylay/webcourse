@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@900&display=swap');
+
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+	background-color: #1e222b;
 }
 .container {
 	background-color: #1e222b;
+	height: 100%;
+	overflow: auto !important;
+	overflow-x: hidden !important;
 }
 .header {
 	width: 100%;
@@ -69,11 +77,22 @@ body {
 }
 
 .main {
-	background-color: #262b36;
+	height: 100%;
 	width: 1000px;
 	margin: auto;
+	background-color: #262b36;
 }
-
+.footer {
+	height: 100%;
+	width: 1000px;
+	margin: auto;
+	color: #7a8293;
+	font-size: 11px;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: 400;
+	line-height: 14px;
+	letter-spacing: 0.8px;
+}
 .new-release {
 	height: 350px;
 	width: 100%;
@@ -83,6 +102,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	color: #fff;
 }
 .new-release-header-left {
@@ -90,6 +110,16 @@ body {
 }
 .new-release-header-right {
 	padding-right: 20px;
+}
+.new-release-header-right button {
+	background-color: transparent;
+	border-width: 1px;
+	border-color: #000;
+	padding-block: 5px;
+	padding-inline: 15px;
+}
+.new-release-header-right i {
+	color: #fff;
 }
 .new-release-body {
 	height: 75%;
@@ -150,27 +180,186 @@ body {
 	height: 1000px;
 	display: flex;
 }
+
+/* theatre  start*/
 .theatre {
 	width: 75%;
 	height: 100%;
 }
+
 .theatre-category {
 	width: 25%;
 	height: 100%;
 }
-.movies {
+.theatre-category-ads-title {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	color: lightseagreen;
+}
+.theatre-category-ads-title p {
+	font-weight: 500;
+	letter-spacing: 1.5px;
+}
+
+.theatre-category-main-header {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	background-color: red;
+}
+.theatre-category-main-header div {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.theatre-category-main-header .category-movie-button button {
+	border-width: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #1e222b;
+	color: #fff;
+}
+
+.theatre-category-main-header .category-series-button button {
+	border-width: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #262b36;
+	color: #fff;
+}
+.genres {
+}
+
+.genres-body,
+.release-year-body {
+	height: 200px;
+	width: 100%;
+	overflow: auto;
+	background-color: #262b36;
+}
+.genres-header,
+.release-year-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 5px;
+
+	background-color: #262b36;
+}
+.genres-header i,
+.release-year-header i {
+	color: silver;
+	display: block;
+	height: 15px;
+	width: 25px;
+	padding-left: 10px;
+}
+.genres-header p,
+.release-year-header p {
+	color: darkturquoise;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.release-year-header p {
+	color: silver;
+}
+
+.genres-body-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 5px;
+	text-decoration: none;
+}
+
+.genres-body-list p {
+	color: silver;
+	padding-left: 10px;
+}
+
+.genres-body-list span {
+	color: white;
+	font-size: 12px;
+}
+.generes-list-count {
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	padding-inline: 5px;
+	padding-block: 3px;
+	border-radius: 3px;
+}
+.genres-body-cirlce {
+	width: 13px;
+	height: 13px;
+	border-radius: 100px;
+	border-width: 2px;
+	border-color: #000;
+	border-style: solid;
+	margin-top: -2px;
+}
+.genres-body-list:hover .genres-body-cirlce {
+	border-color: #ffb400;
+}
+.releaseYear {
 	width: 100%;
 }
-.movies-header {
+/* genres end */
+/* release year component start */
+.release-year-body-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.release-year-list-item {
+	background-color: #000;
+	color: #fff;
+	padding-block: 8px;
+	width: 45%;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.release-year-list-item:hover {
+	background-color: #464536;
+}
+.release-year-list-item:hover span {
+	color: #fff;
+}
+.release-year-list-item span {
+	font-size: 12px;
+}
+
+/*  */
+.movies,
+.series {
+	width: 100%;
+}
+.movies-header,
+.series-header {
 	width: 100%;
 	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 10px;
+	background-color: #262b36;
+	padding-top: 10px;
+	padding-bottom: 15px;
 }
-.movies-header div:first-child {
-	color: darkturquoise;
+.series-header {
+	padding-top: 50px;
+}
+.movies-header div:first-child,
+.series-header div:first-child {
+	/* color: darkturquoise; */
 	font-weight: 600;
 	font-size: 20px;
 	border-left-width: 8px;
@@ -184,21 +373,34 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.movies-header div:last-child {
+.movies-header div:last-child,
+.series-header div:last-child {
 	padding-right: 20px;
 }
-.movies-header div:last-child button {
+.movies-header div:last-child button,
+.series-header div:last-child button {
 	padding-inline: 10px;
 	padding-block: 5px;
 	border-width: 0px;
 	background-color: green;
 	color: #fff;
 }
-.movies-container {
+.movies-container,
+.series-container {
 	display: flex;
 	flex-wrap: wrap;
+	height: 100%;
+	background-color: #262b36;
 }
 
+@keyframes movieanimation {
+	0% {
+		margin-top: -50px;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
 .movie-card {
 	flex-shrink: 0;
 	width: 135px;
@@ -206,6 +408,9 @@ body {
 	margin-left: 10px;
 	box-shadow: 1px 1px 10px #222;
 	border-radius: 5px;
+	animation-name: movieanimation;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
 }
 .movie-card-body {
 	width: 100%;
@@ -221,6 +426,24 @@ body {
 .movie-card-body p:last-child {
 	color: #ccc;
 }
+
+.float-btn {
+	position: absolute;
+	right: 20px;
+	bottom: -50px;
+}
+.float-btn button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border-width: 0;
+	background-color: #ffb400;
+	box-shadow: 5px 5px 15px grey;
+}
+.float-btn button i {
+	font-size: 20px;
+	color: #fff;
+}
 @media only screen and (max-width: 1000px) {
 	.main {
 		width: 100%;
@@ -228,8 +451,19 @@ body {
 	.main-header {
 		width: 100%;
 	}
+	.footer {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.movie-card {
+		width: 150px;
+	}
 }
 @media only screen and (max-width: 768px) {
+	.main {
+		width: 100%;
+	}
 	.list {
 		display: none;
 	}
@@ -263,4 +497,24 @@ body {
 	.theatre-category {
 		display: none;
 	}
+}
+
+@keyframes moviemove {
+	0% {
+		margin-left: 0px;
+		/* transform: rotateX(0deg); */
+	}
+	100% {
+		margin-left: 300px;
+		/* transform: rotateX(360deg); */
+	}
+}
+
+.movies-header-title {
+	color: darkturquoise;
+	animation-name: moviemove;
+	animation-duration: 12s;
+	animation-delay: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
