@@ -5,14 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 	</head>
-	<body>
+	<body style="background-color: silver">
+		<p id="demo"></p>
+
+		<button onclic="hello()">Click me</button>
 		<script type="text/javascript">
-			const database = {
-				movieposter: 'https://flxt.tmsimg.com/assets/p170620_p_v8_az.jpg',
-				movieName: 'Iron men 3',
-				movieRelease: 2016,
-			};
-			database.movieposter = null;
+			function hello() {
+				document.getElementById('demo').innerHTML = 'Hello world';
+			}
 		</script>
 	</body>
 </html>

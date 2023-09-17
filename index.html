@@ -15,11 +15,15 @@
 	</head>
 	<body>
 		<div class="container">
+			<div id="mobile-menu">
+				<button onclick="removeMenu()">Remove</button>
+			</div>
 			<div class="header" id="float">
 				<div class="main-header">
 					<div class="header-menu">
-						<p>Menu</p>
+						<p onclick="menu()">Menu</p>
 					</div>
+
 					<div class="main-header-left">
 						<div class="header-logo">
 							<image src="./icons/cmlogo.jpeg" width="auto" height="32px" />
@@ -702,6 +706,7 @@
 				Channelmyanmar.org in no way affiliated with them nor intend to do that.
 			</p>
 		</div>
+
 		<div class="float-btn">
 			<a href="#float">
 				<button>
@@ -709,5 +714,13 @@
 				</button>
 			</a>
 		</div>
+		<script type="text/javascript">
+			function menu() {
+				document.getElementById('mobile-menu').style.display = 'block';
+			}
+			function removeMenu() {
+				document.getElementById('mobile-menu').style.display = 'none';
+			}
+		</script>
 	</body>
 </html>

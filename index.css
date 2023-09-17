@@ -509,12 +509,27 @@ body {
 		/* transform: rotateX(360deg); */
 	}
 }
-
 .movies-header-title {
 	color: darkturquoise;
-	animation-name: moviemove;
+	/* animation-name: moviemove;
 	animation-duration: 12s;
 	animation-delay: 1s;
 	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+	animation-iteration-count: infinite; */
+}
+/*  */
+
+#mobile-menu {
+	background-color: red;
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+	#mobile-menu {
+		display: none;
+	}
 }
