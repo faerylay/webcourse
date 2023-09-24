@@ -408,9 +408,9 @@ body {
 	margin-left: 10px;
 	box-shadow: 1px 1px 10px #222;
 	border-radius: 5px;
-	animation-name: movieanimation;
+	/* animation-name: movieanimation;
 	animation-duration: 3s;
-	animation-iteration-count: 1;
+	animation-iteration-count: 1; */
 }
 .movie-card-body {
 	width: 100%;
