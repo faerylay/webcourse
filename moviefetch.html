@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="movie-container">
+
+  
+		</div>
+		<script type="text/javascript">
+      const movieList = document.getElementById('movie-container')
+
+       const apiUrl = 'http://www.omdbapi.com/?s=jack&apikey=752cc452'
+
+
+
+       fetch(apiUrl).then( res=> res.json()).then(data => {
+
+       data.Search.forEach(movie=> {
+        const listItem = document.createElement('li')
+          listItem.innerHTML = `
+           <h1>${movie.Title}</h1>
+            <image src="${movie.Poster}"/>
+          `
+          listItem.style.listStyleType = 'none'
+        movieList.appendChild(listItem)
+       })
+
+
+      })
+   
+    </script>      
+</html>
+<!-- frontend data request -> -> api -> ->()=> {
+  login authentication
+}->->middleware->middleware-> -> -> ->  backend (data result -> response )
+->-> response -> response  -> res.json()   -->
+

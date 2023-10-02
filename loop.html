@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.movie-card {
+				flex-shrink: 0;
+				width: 135px;
+				height: 100%;
+				margin-left: 10px;
+				box-shadow: 1px 1px 10px #222;
+				border-radius: 5px;
+				/* animation-name: movieanimation;
+	animation-duration: 3s;
+	animation-iteration-count: 1; */
+			}
+			.movie-card-body {
+				width: 100%;
+				height: 25%;
+			}
+			.movie-card-body p {
+				padding: 5px;
+				margin: 0;
+			}
+			.movie-card-body p:first-child {
+				color: #fff;
+			}
+			.movie-card-body p:last-child {
+				color: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="movies-container" id="movies-container"></div>
+		<script type="text/javascript">
+			// const movieList = document.getElementById('movies-container');
+
+			// for (let i = 5; i < 10; i++) {
+			// 	const listItem = document.createElement('div');
+			// 	// document.write('Hello ' + i + '<br/>');
+			// 	listItem.innerHTML = `
+			//   <div class="card">
+			// 				<image src="./images/friday.jpg" width="100%" height="75%" />
+			// 				<div class="card-body">
+			// 					<p>Friday movie</p>
+			// 					<p>2023</p>
+			// 				</div>
+			// 			</div>`;
+			// 	movieList.appendChild(listItem);
+			// }
+			//
+			// loop false
+			// let a = 16;
+			// while (a <= 15) {
+			// 	document.write(a + '<br/>');
+			// 	console.log(a);
+			// 	a++;
+			// 	// true
+			// }
+
+			// let i = 30;
+			// do {
+			// 	document.write(i + '<br/>');
+			// 	i++;
+			// } while (i <= 25);
+			//ignore
+
+			// array [] , object {}
+			// const person = {
+			// 	fname: 'John',
+			// 	lname: 'Doe',
+			// 	age: 25,
+			// };
+
+			// let txt = '';
+			// for (let x of person) {
+			// 	txt = txt + person[x] + ' ';
+			// }
+
+			// const cars = ['BMW', 'Volvo', 'Mini'];
+
+			// let text = '';
+			// for (let x of cars) {
+			// 	let dash = '-';
+
+			// 	if (cars[cars.length - 1] === x) {
+			// 		dash = '';
+			// 	}
+			// 	text = text + x + dash;
+			// }
+			// window.onload = function () {
+			// 	document.getElementsByTagName('div')[0].innerHTML = 'Hello';
+			// };
+
+			// document.getElementsByTagName('div')[0].innerHTML = 'Hello';
+		</script>
+	</body>
+</html>

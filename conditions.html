@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let date = new Date();
+			// if (date.getDate() > 25) {
+			// 	console.log('25 date over');
+			// } else if (date.getDate() === 25) {
+			// 	console.log('now is 25');
+			// } else if (date.getDate() === 24) {
+			// 	console.log('now is 24');
+			// } else {
+			// 	console.log('not over 25');
+			// }
+
+			switch (date.getDay()) {
+				case 0:
+					console.log('this is Sunday');
+					break;
+				case 1:
+					console.log('this is Monday');
+					break;
+				case 2:
+					console.log('this is Tuesday');
+					break;
+				case 3:
+					console.log('this is Wednesday');
+					break;
+				case 4:
+					console.log('this is Thursday');
+					break;
+				case 5:
+					console.log('this is friday');
+					break;
+				case 6:
+					console.log('this is saturday');
+				default:
+					console.log('not weekend');
+			}
+		</script>
+	</body>
+</html>
